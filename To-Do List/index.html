@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List || Oasis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Atomic Age' rel='stylesheet'>
+</head>
+
+<body>
+    <header>To-Do List
+    </header>
+    <div class="container">
+        <div id="addTsk">
+            <div id="newTsk">
+                <input type="text" id="usrInp" placeholder="Add your task........">
+                <input type="hidden" id="saveIndex">
+                <button id="push">Add Task</button>
+                <button style="display:none;" id="save">Save Task</button>
+            </div>
+        </div>
+        <div id="tskList">
+            <div id="searchTsk">
+                <button id="dltAll">Delete All</button>
+                <input type="text" id="searchBar" placeholder="Search Task.......">
+            </div>
+            <div id="tasks">
+                <div id="task">
+                    <span id="taskName">
+                        1.Example Task
+                    </span>
+                    <div id="actions">
+                        <button id="edit">
+                            <ion-icon name="create"></ion-icon> Edit
+                        </button>
+                        <button id="delete">
+                            <ion-icon name="trash"></ion-icon> Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="snackBar">Please enter a task</div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
