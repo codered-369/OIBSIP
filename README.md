@@ -1,2 +1,2 @@
 # OIBSIP
-Oasis Infobyte InternsInterval hip
+Oasis Infobyte Internship.
