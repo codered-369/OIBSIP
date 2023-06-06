@@ -1,0 +1,247 @@
+*{
+    font-family: "Aleo";
+}
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    font-size: 30px;
+    font-family: "Atomic Age";
+    margin-bottom: 30px ;
+    font-weight: 800;
+
+}
+:root{
+
+    --primary-color: linear-gradient(
+        45deg,#053FEA,
+        #0BC9F7);
+    --secendory-color: linear-gradient(
+        45deg,#E62B22,
+        #EB5F22);
+    --accent-color: rgb(25, 143, 203);
+    }
+html{
+    font-size: 65%;
+}
+body{
+    background: var(--primary-color);
+    min-height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 0em;
+}
+.container{
+    padding:1em;
+    width: 45vh;
+}
+#newTsk{
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 7px 10px 10px 0px rgb(0,0,0,0.5);
+}
+#usrInp{
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid #4e4646;
+    color: black;
+}
+#usrInp:focus{
+    outline: none;
+    border: 2px solid var(--accent-color);
+    font-weight: bolder;
+}
+/* #save{
+    width: 13%;
+    margin-top: 0;
+    font-size: 1.6rem;
+
+} */
+#push ,#save{
+    margin-top: 0.5em;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.7em;
+    cursor: pointer;
+
+}
+#tskList{
+    margin-top: 2em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 7px 10px 10px 0px rgb(0,0,0,0.5);
+    padding: 1em;
+}
+#searchTsk{
+    display: flex;
+    flex-direction: column;
+}
+#dltAll{
+    margin-bottom: 0.6em;
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    background: var(--secendory-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#searchBar{
+    width: 96%;
+    font-size: 1.3rem;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #4e4646;
+    color: #111111;
+
+}
+#searchBar:focus{
+    outline: none;
+    border: 2px solid var(--accent-color);
+}
+#tasks{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+#noTasks{
+    font-size: 1.3rem;
+}
+#task{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+    width: 96%;
+    padding: 1em 0.5em;
+    margin-bottom: 1em;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: 8px 14px 10px 2px rgb(0, 0,0,0.3);
+}
+#taskName{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+#actions{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+#edit, #delete{
+    width: 48%;
+    padding: 1em;
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+#delete{
+    background: var(--secendory-color);
+}
+#snackBar{
+    min-width: 25em;
+    margin-left:3em;
+    background:transparent;
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1.6em;
+    z-index: 1;
+}
+@media only screen and (min-width: 500px){
+    .container{
+        padding:1em;
+        width: 100%;
+        max-width: 900px;
+    }
+    #newTsk{
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+
+    }
+    #usrInp{
+        width: 60%;
+        font-size: 1.6rem;
+
+    }
+    #push, #save{
+        margin-top: 0;
+        width: 38%;
+        font-size: 1.6rem;
+    }
+    #tskList{
+        padding:2em;
+
+    }
+    #searchTsk{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #dltAll{
+        margin-bottom: 0;
+        width: 38%;
+        padding: 0.7em;
+
+    }
+    #searchBar{
+        width: 60%;
+        padding: 0.7em;
+    }
+    /* #save{
+        width: 13%;
+        margin-top: 0;
+        font-size: 1.6rem;
+    
+    } */
+    #task{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #taskName{
+        width: 60%;
+        font-size: 1.7rem;
+
+    }
+
+    #actions{
+        margin-top: 0;
+        width: 40%;
+
+    }
+    #edit,#delete{
+        font-size: 1.2rem;
+        padding: 1em 0.7em;
+
+    }
+}
+
+
+
+
+
