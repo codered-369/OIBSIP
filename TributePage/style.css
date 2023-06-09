@@ -1,0 +1,88 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Aleo';
+    background:linear-gradient(117deg,#313eb64a,#201055);
+}
+main{
+    padding: 2% 5% 0%;
+}
+h1.head{
+    font-size: 6em;
+}
+.imgcvr{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 1px;
+    background-color: rgb(239, 239, 7);
+    text-align: center;
+    color: #222;
+
+}
+.bs{
+    border-radius: 15px;
+    padding: 30px 30px 10px;
+    background-color: rgba(60, 173, 211, 0.555);
+    
+
+}
+.rimg .imgcvr{
+    border-radius: 15px;
+    width: 99%;
+    height: auto;
+}
+.rcont{
+    border-radius: 15px;
+    text-align: left;
+    background-color: rgba(234, 220, 148, 0.76);
+    padding: 15px;
+    font-size: 15px;
+}
+.rcont ul{
+    padding: 0 5vw;
+    text-align:left;
+    font-weight: bold;
+    list-style: disc;
+
+
+}
+.rcont ul li{
+    font-weight: 100;
+}
+.quote{
+    padding: 0;
+    margin: 0;
+
+}
+footer{
+    width: 100%;
+}
+.cpy{
+    background: linear-gradient(180deg,#060715,#30565f);
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+@media (min-width: 1200px){
+    rcont ul{
+        padding: 10px;
+    }
+}
+@media (max-width: 800px) {
+    main {
+        padding: 0;
+        margin: 0;
+    }
+    .base {
+        margin: 5px;
+    }
+    .content ul {
+        padding: 10px;
+    }
+}
+
+
